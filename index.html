@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy Valentine’s!</title>
-
+  <title>Happy Valentine’s!</title>  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -99,9 +98,9 @@
 
     .card {
       width: 85%;
-      max-width: 550px;
+      max-width: 650px;
       background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
-      padding: 45px 40px;
+      padding: 45px 50px;
       border-radius: 30px;
       text-align: center;
       display: none;
@@ -129,12 +128,13 @@
     }
 
     .card h2 {
-      font-size: 2.2rem;
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
       color: #c2185b;
       margin-bottom: 15px;
       animation: heartbeat 1.5s ease-in-out infinite;
       text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-      font-weight: bold;
+      font-weight: 400;
     }
 
     @keyframes heartbeat {
@@ -144,12 +144,13 @@
     }
 
     .card p {
-      font-size: 1.3rem;
+      font-family: 'Great Vibes', cursive;
+      font-size: 1.8rem;
       color: #880e4f;
       margin-bottom: 20px;
       animation: slide-in 0.6s ease-out;
-      font-weight: 600;
-      letter-spacing: 0.5px;
+      font-weight: 400;
+      letter-spacing: 0.8px;
     }
 
     @keyframes slide-in {
@@ -227,6 +228,29 @@
         opacity: 0;
       }
     }
+
+    .signature {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.8rem;
+      color: #d81b60;
+      margin-top: 8px;
+      margin-bottom: 0;
+      font-weight: 400;
+      letter-spacing: 2px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+      animation: signature-fade 0.8s ease-out 0.4s both;
+    }
+
+    @keyframes signature-fade {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   </style>
 </head>
 
@@ -238,7 +262,8 @@
 
   <div class="card" id="card">
     <h2>💖 Happy Valentine's Day 💖</h2>
-    <p>Wish for many more years of friendship 🥹</p>
+    <p>Wishing for many more years of friendship 🥹</p>
+    <div class="signature">~ Julio</div>
 
     <!-- Put photo.jpg in the same folder -->
     <img src="images1.jpg" alt="Friend photo">
